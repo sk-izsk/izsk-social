@@ -13,10 +13,11 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     backgroundColor: theme.colors.primaryColor,
     color: theme.colors.white,
     border: "none",
-    padding: theme.spacing(0.8),
+    padding: theme.spacing(1.5),
     borderRadius: 8,
     maxWidth: 100,
     width: "100%",
+    cursor: "pointer",
     "&:focus": {
       outline: "none",
     },

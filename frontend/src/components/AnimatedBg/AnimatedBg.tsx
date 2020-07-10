@@ -26,7 +26,6 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
   },
   childContainer: {
     maxWidth: 350,
@@ -34,6 +33,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     backgroundColor: theme.colors.white,
     borderRadius: 8,
     padding: theme.spacing(1),
+    marginTop: theme.spacing(14),
   },
 }));
 

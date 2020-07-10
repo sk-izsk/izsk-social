@@ -1,7 +1,8 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
-import { AnimatedBG, Button, CheckBox, TextField } from "../../components";
+import { Checkbox } from "semantic-ui-react";
+import { AnimatedBG, Button, TextField } from "../../components";
 import { CustomTheme, theme } from "../../theme/theme";
 
 export interface SignUpProps {}
@@ -38,6 +39,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       textDecoration: "none",
     },
   },
+  button: {
+    backgroundColor: theme.colors.primaryColor,
+  },
 }));
 
 const SignUp: React.FC<SignUpProps> = () => {
@@ -55,7 +59,7 @@ const SignUp: React.FC<SignUpProps> = () => {
         <TextField placeHolder="Re enter your password" type="password" />
         <div className={classes.buttonContainer}>
           <div>
-            <CheckBox /> <span>Remember me</span>
+            <Checkbox label={<label>Remember me</label>} />
           </div>
           <Button>Submit</Button>
         </div>

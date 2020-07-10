@@ -6,7 +6,7 @@ export interface NavBarProps {}
 const NavBar: React.FC<NavBarProps> = () => {
   return (
     <div style={{ position: "sticky", top: 0 }}>
-      <Menu>
+      <Menu color="blue">
         <Menu.Item name="browse">Browse</Menu.Item>
 
         <Menu.Item name="submit">Submit</Menu.Item>
